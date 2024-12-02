@@ -1,0 +1,46 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #0d1e2e;
+  &__logo {
+    &-image {
+      width: 95px;
+      height: 55px;
+      object-fit: cover;
+      object-position: 50%;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+    &-item {
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 400;
+      &:hover {
+        color: #d6ff62;
+      }
+    }
+  }
+  &__menu {
+    &-profile {
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+    &-burguer {
+      @media only screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}

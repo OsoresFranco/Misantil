@@ -1,0 +1,83 @@
+.training-method {
+  text-align: left;
+  margin:100px;
+  @media (max-width: 480px) {
+    margin: 50px;
+  }
+  &__intro {
+    &-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 88.25px;
+      margin-bottom: 40px;
+      @media (max-width: 480px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+    &-text {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+      color: #000000;
+      margin-bottom: 120px;
+      line-height: 35.3px;
+      @media (max-width: 480px) {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 70px;
+    }
+    &-card {
+      text-align:left;
+      padding: 1rem;
+      &-icon {
+        display: block;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+        @media (max-width: 480px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 0;
+        color: #000000;
+        @media (max-width: 480px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+      &-text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #000000;
+        @media (max-width: 480px) {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+.nutrition{
+    background: #0D1E2E;
+    &__intro{
+        padding: 108px 108px;
+        padding-bottom: 88px;
+        text-align: left;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-left: 21px;
+          }
+          @media (max-width: 425px) {
+            margin-bottom: 50px;
+          }
+        &-title{
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 50px;
+            color:#F8FCFF;
+            padding-bottom: 62px;
+            @media (max-width: 425px) {
+                font-size: 30px;
+                line-height: 39px;
+                padding-bottom: 32px;
+              }
+
+        }
+        &-text{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 35.3px;
+            color:#F8FCFF;
+            padding-right: 155px;
+            @media (max-width: 1024px) {
+                padding:25px;
+                text-align: left;
+              }
+              @media (max-width: 425px) {
+                font-size: 14px;
+                line-height: 21px;
+                padding: 15px;
+              }
+        }
+    }
+    &__details{
+        display: flex;
+        gap:75px;
+        margin-left: 155px;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            margin-left: 21px;
+          }
+        &-image{
+            width: 499px;
+            height:520px;
+            @media (max-width: 425px) {
+                width: 358px;
+                height: 270px;
+              }
+        
+        }
+        &-text{
+            font-family: 'Montserrat', sans-serif;
+            color:#F8FCFF;
+            padding-right: 155px;
+            @media (max-width: 425px) {
+                padding-right: 16px;
+              }
+            &-title{
+                font-weight: 800;
+                font-size: 22px;
+                line-height: 38.83px;
+                text-align: left;
+                margin-bottom: 0;
+                @media (max-width: 425px) {
+                    font-size: 18px;
+                    line-height: 31.77px;
+                    padding-bottom: 1px;
+                  }
+            }
+            &-paragraph{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 35.3px;
+                text-align:justify;
+                margin-bottom: 27px;
+                margin-top:0;
+                @media (max-width: 425px) {
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding-bottom: 32px;
+                    text-align: left;
+                  }
+            }
+
+        }
+    }
+    &__action{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 108px 0px;
+        @media (max-width: 1024px) {
+            align-items: flex-start;
+            padding-left: 25px;
+            padding-bottom: 86px;
+            padding-top: 10px;
+          }
+        &-title{
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            text-align: center;
+            line-height: 70.6px;
+            color:#F8FCFF;
+            padding-bottom: 20px;
+            @media (max-width: 425px) {
+                font-size: 30px;
+                line-height: 52.95px;
+                padding-bottom: 10px;
+                text-align: left;
+              }
+
+        }
+        &-text{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            text-align: center;
+            line-height: 20px;
+            color:#F8FCFF;
+            padding-bottom: 20px;
+            @media (max-width: 425px) {
+                font-size: 14px;
+                line-height: 21px;
+                padding-bottom: 24px;
+                text-align: left;
+              }
+
+        }
+        &-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        border: none;
+        background: #d6ff62;
+        width: 216px;
+        height: 46px;
+        font-family: "Montserrat", sans-serif;
+        color: #0d1e2e;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 700;
+        line-height: 22px;
+        border-radius: 10px;
+        cursor: pointer;
+        @media (max-width: 425px) {
+            width: 139px;
+            height: 34.33px;
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+    }
+}

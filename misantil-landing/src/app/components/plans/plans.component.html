@@ -1,0 +1,23 @@
+<div class="plans">
+  <div class="plans__intro">
+    <h1 class="plans__intro-title">Planes de entrenamiento</h1>
+    <p class="plans__intro-text">
+      Cada uno de estos planes está diseñado para ofrecerte el máximo apoyo y
+      que puedas dar lo mejor de vos. ¡Contáctame y juntos diseñamos el plan que
+      más se adapte a tus necesidades!
+    </p>
+  </div>
+
+  <div class="plans__grid">
+    <div class="plans__grid-card" *ngFor="let item of items">
+      <div class="plans__grid-card-text">
+        <h3 class="plans__grid-card-text-title">{{ item.title }}</h3>
+        <p
+          [innerHTML]="item.description"
+          class="plans__grid-card-text-description"
+        ></p>
+      </div>
+      <a class="plans__grid-card-button">Comenzar hoy</a>
+    </div>
+  </div>
+</div>

@@ -8,8 +8,8 @@
     padding-right: 150px;
     margin-bottom: 70px;
     @media only screen and (max-width: 768px) {
-      padding-right: 15px;
-      margin-bottom: 25px;
+      padding-right: 0px;
+      margin-bottom: 0px;
       text-align: justify;
     }
     &-title {
@@ -41,7 +41,12 @@
     display: flex;
     gap: 60px;
     padding-right: 130px;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+      align-items: center;
+    }
     @media only screen and (max-width: 768px) {
+      padding-right: 0;
       flex-direction: column;
       align-items: center;
       text-align: justify;
@@ -53,15 +58,17 @@
       line-height: 35.3px;
       color: #ffffff;
       @media only screen and (max-width: 768px) {
-      font-size: 14px;
-      line-height: 21px;
+        font-size: 14px;
+        line-height: 21px;
       }
       &--green {
         color: #d6ff62;
         padding-bottom: 70px;
         @media only screen and (max-width: 768px) {
+          font-size: 14px;
+          line-height: 21px;
           padding-bottom: 0px;
-          }
+        }
       }
       &-button {
         display: flex;
@@ -111,6 +118,10 @@
       cursor: pointer;
       @media only screen and (max-width: 768px) {
         display: flex;
+        width: 140px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 16px;
       }
     }
   }

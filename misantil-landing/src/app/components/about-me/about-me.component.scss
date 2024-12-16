@@ -14,11 +14,11 @@
     }
     &-title {
       font-family: Bebas Neue;
-      font-size: 50px;
+      font-size: 60px;
       font-weight: 400;
       color: #ffffff;
-      line-height: 35px;
-      margin-bottom: 55px;
+      line-height: 105px;
+      margin-bottom: 15px;
       @media only screen and (max-width: 768px) {
         font-size: 30px;
         line-height: 52px;
@@ -28,9 +28,9 @@
     &-text {
       font-family: Montserrat;
       font-size: 20px;
-      font-weight: 350;
+      font-weight: 400;
       color: #ffffff;
-      line-height: 30px;
+      line-height: 35px;
       @media only screen and (max-width: 768px) {
         font-size: 14px;
         line-height: 21px;
@@ -41,7 +41,7 @@
     display: flex;
     gap: 60px;
     padding-right: 130px;
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: 850px) {
       flex-direction: column;
       align-items: center;
     }
@@ -55,7 +55,7 @@
       font-family: Montserrat;
       font-size: 20px;
       font-weight: 400;
-      line-height: 35.3px;
+      line-height: 35px;
       color: #ffffff;
       @media only screen and (max-width: 768px) {
         font-size: 14px;
@@ -93,10 +93,11 @@
       }
     }
     &-image {
-      height: 460px;
+      img {
+        height: 505px;
+      }
       @media only screen and (max-width: 768px) {
-        height: 360px;
-        width: 350px;
+        height: 100%;
       }
     }
     &-action {

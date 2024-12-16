@@ -1,75 +1,80 @@
 .plans {
-    text-align: left;
-    margin-left: 70px;
-    margin-bottom: 70px;
+  text-align: left;
+  padding: 135px;
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
+  &__intro {
+    margin-bottom: 75px;
+    padding-left: 20px;
     @media (max-width: 768px) {
-        margin: 35px;
-        margin-bottom: 50px;
-      }
-    @media (max-width: 480px) {
-        margin: 25px;
-        margin-bottom: 50px;
-      }
-    &__intro{
-        &-title{
-            font-family: 'Bebas Neue', sans-serif;
-            font-weight: 400;
-            font-size: 50px;
-            line-height: 88.25px;
-            color: #000000;
-            text-align: left;
-            @media (max-width: 480px) {
-                font-size: 30px;
-                line-height: 40px;
-              }
-        }
-        &-text{
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 35.3px;
-            color: #000000;
-            text-align: left;
-        }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0px;
+      margin-bottom: 50px;
     }
+    &-title {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 105px;
+      color: #000000;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 36px;
+        line-height: 64px;
+      }
+    }
+    &-text {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 35px;
+      color: #000000;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 21px;
+        text-align: justify;
+      }
+    }
+  }
   &__grid {
     display: flex;
-    gap: 15px;
+    column-gap: 15px;
+    row-gap: 50px;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
-    width: 100%;
-    @media (max-width: 1024px) {
-        display:flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-        flex-direction: column;
-      }
+    @media (max-width: 1374px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      align-content: space-around;
+    }
     &-card {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background-color: #0d1e2e;
       border-radius: 16px;
-      padding: 24px;
       text-align: center;
       flex: 1;
-      width: 321px;
-      height: 940px;
-      @media (max-width: 1024px) {
-       min-height: 700px;
-       width: 390px;
-       align-items: center;
+      height: 1000px;
+      padding-left: 50px;
+      @media (max-width: 1374px) {
+        width: 380px;
       }
-      @media (max-width: 425px) {
-        min-height: 700px;
-        width: 321px;
-        align-items: center;
-       }
+      @media (max-width: 768px) {
+        padding-left: 40px;
+        width: 19rem;
+      }
       &-text {
-        padding: 0px 35px;
+        padding: 45px 35px 40px 0px;
         &-title {
-          font-family: "Montserrat", sans-serif;
+          font-family: "Roboto", sans-serif;
           font-size: 32px;
           font-weight: 800;
           color: #d6ff62;
@@ -77,18 +82,21 @@
           text-align: left;
           margin-bottom: 30px;
           @media (max-width: 768px) {
-            font-size:28px;
-            line-height: 33.6px;
+            font-size: 28px;
+            line-height: 34px;
+            font-weight: 700;
           }
         }
         &-description {
-          font-family: "Montserrat", sans-serif;
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          font-family: "Roboto", sans-serif;
           font-size: 18px;
           font-weight: 400;
           line-height: 28px;
           color: #ffffff;
           text-align: left;
-          margin-bottom: 1.5rem;
           @media (max-width: 768px) {
             font-size: 14px;
             line-height: 20px;
@@ -104,26 +112,24 @@
         background: #d6ff62;
         width: 216px;
         height: 46px;
-        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto", sans-serif;
         color: #0d1e2e;
         font-size: 18px;
         text-decoration: none;
         font-weight: 700;
         line-height: 22px;
         border-radius: 10px;
-        margin-bottom: 54px;
-        margin-left: 25px;
+        margin-bottom: 60px;
         cursor: pointer;
 
-        @media screen and (max-width: 720px) {
-          width: 150px;
-          height: 35px;
+        @media screen and (max-width: 768px) {
+          width: 131px;
+          height: 32px;
           font-size: 14px;
           font-weight: 700;
-          text-align: center;
-          &-icon {
-            height: 16px;
-          }
+          line-height: 16px;
+
+          margin-bottom: 50px;
         }
       }
     }

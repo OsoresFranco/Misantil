@@ -3,14 +3,14 @@
     <h1 class="training-method__intro-title">
       MI MÉTODO: ENTRENAMIENTOS PERSONALIZADOS Y EFICACES
     </h1>
-    <p class="training-method__intro-text">
+    <div class="training-method__intro-text">
       El entrenamiento personalizado es la clave para obtener resultados óptimos
       y sostenibles a largo plazo. Mi proyecto se basa en la optimización de las
       Variables del Entrenamiento (intensidad, frecuencia, volumen, entre
       otros). Cada plan es único y adaptado a tus capacidades, objetivos e
       intereses. Mi metodología de entrenamiento está diseñada para maximizar tu
       potencial.
-    </p>
+    </div>
   </div>
   <div class="training-method__grid">
     <div class="training-method__grid-card" *ngFor="let item of items">
@@ -19,8 +19,8 @@
         [src]="item.icon"
         [alt]="item.title"
       />
-      <h3 class="training-method__grid-card-title">{{ item.title }}</h3>
-      <p class="training-method__grid-card-text">{{ item.description }}</p>
+      <div class="training-method__grid-card-title">{{ item.title }}</div>
+      <div class="training-method__grid-card-text">{{ item.description }}</div>
     </div>
   </div>
 </div>

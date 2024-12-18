@@ -1,0 +1,76 @@
+<div class="contact">
+  <div class="contact__intro">
+    <div class="contact__intro-title">Contacto</div>
+    <div class="contact__intro-text">
+      ¿Listo para comenzar tu transformación o tienes alguna consulta? Estoy
+      aquí para ayudarte a alcanzar tus objetivos y guiarte en cada paso del
+      proceso. Completa el formulario a continuación o envíame un mensaje
+      directo, y me pondré en contacto con vos. Juntos podemos diseñar el plan
+      que más se adecue a vos. ¡No esperes más!
+    </div>
+  </div>
+  <div class="contact__content">
+    <img class="contact__content-image" src="images/contact2.jpg" alt="" />
+    <div class="contact__content-form">
+      <form (ngSubmit)="onSubmit()">
+        <!-- Name Input -->
+        <div class="contact__content-form-input">
+          <label for="name">Nombre</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            [(ngModel)]="contactData.name"
+            required
+            placeholder=""
+          />
+        </div>
+
+        <!-- Phone Number Input -->
+        <div class="contact__content-form-input">
+          <label for="phone">Telefono</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            [(ngModel)]="contactData.phone"
+            required
+            placeholder=""
+          />
+        </div>
+
+        <!-- Email Input -->
+        <div class="contact__content-form-input">
+          <label for="email">Mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="contactData.email"
+            required
+            placeholder=""
+          />
+        </div>
+
+        <!-- Message Input -->
+        <div class="contact__content-form-textarea">
+          <label for="message">Mensaje</label>
+          <textarea
+            id="message"
+            name="message"
+            [(ngModel)]="contactData.message"
+            required
+            placeholder=""
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="contact__content-form-button">
+          Enviar mensaje
+        </button>
+        
+      </form>
+      <img class="contact__content-form-image" src="images/contact2.jpg" alt="" />
+    </div>
+  </div>
+</div>

@@ -7,11 +7,12 @@ import { AboutMeComponent } from "./components/about-me/about-me.component";
 import { MethodologyComponent } from "./components/methodology/methodology.component";
 import { PlansComponent } from "./components/plans/plans.component";
 import { NutritionComponent } from "./components/nutrition/nutrition.component";
+import { ContactComponent } from "./components/contact/contact.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolbarComponent, ToolbarMenuComponent, HeroComponent, AboutMeComponent, MethodologyComponent, PlansComponent, NutritionComponent],
+  imports: [RouterOutlet, ToolbarComponent, ToolbarMenuComponent, HeroComponent, AboutMeComponent, MethodologyComponent, PlansComponent, NutritionComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

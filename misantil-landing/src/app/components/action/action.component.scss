@@ -1,0 +1,60 @@
+.action {
+  background: #0d1e2e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5.2rem 14.5rem;
+  @media only screen and (max-width: 768px) {
+    padding: 3.75rem 1.1rem;
+  }
+  &-title {
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-size: 3.75rem;
+    line-height: 6.6rem;
+    color: #ffffff;
+    margin-bottom: 0.6rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 2.25rem;
+      line-height: 2.6rem;
+    }
+  }
+  &-text {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 3.75rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    background: #d6ff62;
+    width: 16rem;
+    height: 3.1rem;
+    font-family: "Roboto", sans-serif;
+    color: #0d1e2e;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    @media only screen and (max-width: 768px) {
+      width: 8.75rem;
+      height: 2.1rem;
+      font-size: 1rem;
+      line-height: 1rem;
+      border-radius: 0.62rem;
+    }
+  }
+}

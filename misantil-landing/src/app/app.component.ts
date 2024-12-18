@@ -8,11 +8,12 @@ import { MethodologyComponent } from "./components/methodology/methodology.compo
 import { PlansComponent } from "./components/plans/plans.component";
 import { NutritionComponent } from "./components/nutrition/nutrition.component";
 import { ContactComponent } from "./components/contact/contact.component";
+import { ActionComponent } from "./components/action/action.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolbarComponent, ToolbarMenuComponent, HeroComponent, AboutMeComponent, MethodologyComponent, PlansComponent, NutritionComponent, ContactComponent],
+  imports: [RouterOutlet, ToolbarComponent, ToolbarMenuComponent, HeroComponent, AboutMeComponent, MethodologyComponent, PlansComponent, NutritionComponent, ContactComponent, ActionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -1,33 +1,30 @@
 <div class="toolbar">
   <nav
-   class="toolbar__content"
-   [ngClass]= "{ 'toolbar__content--active': toolbarStatus }"
-   >
+    class="toolbar__content"
+    [ngClass]="{ 'toolbar__content--active': toolbarStatus }"
+  >
     <ul class="toolbar__content-menu">
       <li class="toolbar__content-menu-link">
-        <a class="toolbar__content-menu-title" href="#"> SOBRE MÍ </a>
+        <a class="toolbar__content-menu-title" href="#about-me"> SOBRE MÍ </a>
       </li>
-      <hr class="toolbar__content-hr"/>
 
       <li class="toolbar__content-menu-link">
-        <a class="toolbar__content-menu-title" href="#"> ENTRENAMIENTO </a>
+        <a class="toolbar__content-menu-title" href="#methodology">
+          ENTRENAMIENTO
+        </a>
       </li>
-      <hr class="toolbar__content-hr"/>
 
       <li class="toolbar__content-menu-link">
-        <a class="toolbar__content-menu-title" href="#"> ASESORAMIENTO </a>
+        <a class="toolbar__content-menu-title" href="#plans"> ASESORAMIENTO </a>
       </li>
-      <hr class="toolbar__content-hr"/>
 
       <li class="toolbar__content-menu-link">
-        <a class="toolbar__content-menu-title" href="#"> CONTACTO </a>
+        <a class="toolbar__content-menu-title" href="#contact"> CONTACTO </a>
       </li>
-      <hr class="toolbar__content-hr"/>
 
       <li class="toolbar__content-menu-link">
         <a class="toolbar__content-menu-title" href="#"> INGRESAR </a>
       </li>
-      <hr class="toolbar__content-hr"/>
     </ul>
   </nav>
 </div>

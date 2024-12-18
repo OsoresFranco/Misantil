@@ -1,4 +1,4 @@
-<div class="contact">
+<div class="contact" id="contact">
   <div class="contact__intro">
     <div class="contact__intro-title">Contacto</div>
     <div class="contact__intro-text">
@@ -10,10 +10,13 @@
     </div>
   </div>
   <div class="contact__content">
-    <img class="contact__content-image" src="images/contact2.jpg" alt="" />
+    <img
+      class="contact__content-image"
+      src="images/contact.jpg"
+      alt="Texto alternativo para imagen contact"
+    />
     <div class="contact__content-form">
       <form (ngSubmit)="onSubmit()">
-        <!-- Name Input -->
         <div class="contact__content-form-input">
           <label for="name">Nombre</label>
           <input
@@ -26,7 +29,6 @@
           />
         </div>
 
-        <!-- Phone Number Input -->
         <div class="contact__content-form-input">
           <label for="phone">Telefono</label>
           <input
@@ -39,7 +41,6 @@
           />
         </div>
 
-        <!-- Email Input -->
         <div class="contact__content-form-input">
           <label for="email">Mail</label>
           <input
@@ -52,7 +53,6 @@
           />
         </div>
 
-        <!-- Message Input -->
         <div class="contact__content-form-textarea">
           <label for="message">Mensaje</label>
           <textarea
@@ -64,13 +64,15 @@
           ></textarea>
         </div>
 
-        <!-- Submit Button -->
         <button type="submit" class="contact__content-form-button">
           Enviar mensaje
         </button>
-        
       </form>
-      <img class="contact__content-form-image" src="images/contact2.jpg" alt="" />
+      <img
+        class="contact__content-form-image"
+        src="images/contact.jpg"
+        alt="Texto alternativo para imagen contact"
+      />
     </div>
   </div>
 </div>

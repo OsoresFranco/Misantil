@@ -1,38 +1,34 @@
 <div class="toolbar">
   <div class="toolbar__logo">
-    <img
-      class="toolbar__logo-image"
-      src="logo/logo.svg"
-      alt="Logo icon"
-    />
+    <img class="toolbar__logo-image" src="logo/logo.svg" alt="Logo icon" />
   </div>
   <div class="toolbar__links">
-    <a class="toolbar__links-item">SOBRE MÍ</a>
-    <a class="toolbar__links-item">ENTRENAMIENTO</a>
-    <a class="toolbar__links-item">ASESORAMIENTO</a>
-    <a class="toolbar__links-item">CONTACTO</a>
+    <a class="toolbar__links-item" href="#about-me">SOBRE MÍ</a>
+    <a class="toolbar__links-item" href="#methodology">ENTRENAMIENTO</a>
+    <a class="toolbar__links-item" href="#plans">ASESORAMIENTO</a>
+    <a class="toolbar__links-item" href="#contact">CONTACTO</a>
   </div>
-  <div  class="toolbar__menu">
+  <div class="toolbar__menu">
     <img
       class="toolbar__menu-profile"
       src="icons/profile.svg"
       alt="Profile icon"
     />
     <div (click)="setActive()" class="toolbar__menu-burguer">
-    <img
-      *ngIf="!toolbarStatus; else close"
-      class="toolbar__menu-burguer-open"
-      src="icons/menu.svg"
-      alt="Menu icon"
-    />
+      <img
+        *ngIf="!toolbarStatus; else close"
+        class="toolbar__menu-burguer-open"
+        src="icons/menu.svg"
+        alt="Menu icon"
+      />
 
-    <ng-template #close>
-    <img
-    class ="toolbar__menu-burguer-close"
-    src="icons/close.svg"
-    alt="Close menu icon"
-    />
-  </ng-template>
-  </div>
+      <ng-template #close>
+        <img
+          class="toolbar__menu-burguer-close"
+          src="icons/close.svg"
+          alt="Close menu icon"
+        />
+      </ng-template>
+    </div>
   </div>
 </div>

@@ -1,10 +1,13 @@
 .toolbar {
   background: #0d1e2e;
   position: fixed;
-  top: 91px;
+  top: 96px;
   right: 0;
   width: 100vw;
   z-index: 15;
+  @media only screen and (max-width: 768px) {
+    top: 67px;
+  }
   &__content {
     width: 100vw;
     max-height: 0;

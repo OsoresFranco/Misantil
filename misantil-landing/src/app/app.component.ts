@@ -9,11 +9,12 @@ import { PlansComponent } from "./components/plans/plans.component";
 import { NutritionComponent } from "./components/nutrition/nutrition.component";
 import { ContactComponent } from "./components/contact/contact.component";
 import { ActionComponent } from "./components/action/action.component";
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ToolbarComponent, ToolbarMenuComponent, HeroComponent, AboutMeComponent, MethodologyComponent, PlansComponent, NutritionComponent, ContactComponent, ActionComponent],
+  imports: [RouterOutlet, ToolbarComponent, ToolbarMenuComponent, HeroComponent, AboutMeComponent, MethodologyComponent, PlansComponent, NutritionComponent, ContactComponent, ActionComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

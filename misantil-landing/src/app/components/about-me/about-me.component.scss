@@ -1,65 +1,29 @@
 .about-me {
   background: #0d1e2e;
-  padding: 105px 0px 105px 150px;
-  @media only screen and (max-width: 768px) {
-    padding: 80px 15px;
-  }
-  &__intro {
-    padding-right: 150px;
-    margin-bottom: 70px;
-    @media only screen and (max-width: 768px) {
-      padding-right: 0px;
-      margin-bottom: 19px;
-      text-align: justify;
-    }
-    &-title {
-      font-family: Bebas Neue;
-      font-size: 60px;
-      font-weight: 400;
-      color: #ffffff;
-      line-height: 105px;
-      margin-bottom: 15px;
-      @media only screen and (max-width: 768px) {
-        font-size: 30px;
-        line-height: 52px;
-        margin-bottom: 45px;
-      }
-    }
-    &-text {
-      font-family: Roboto;
-      font-size: 20px;
-      font-weight: 400;
-      color: #ffffff;
-      line-height: 35px;
-      @media only screen and (max-width: 768px) {
-        font-size: 14px;
-        line-height: 21px;
-      }
-    }
-  }
+
   &__details {
     display: flex;
-    gap: 60px;
-    padding-right: 130px;
-    @media only screen and (max-width: 1100px) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
     @media only screen and (max-width: 768px) {
       padding-right: 0;
       flex-direction: column;
       align-items: center;
       text-align: justify;
     }
+
     &-text {
       font-family: Roboto;
       font-size: 20px;
       font-weight: 400;
       line-height: 35px;
       color: #ffffff;
+      padding: 80px 95px;
+
+      @media only screen and (max-width: 1100px) {
+        padding: 80px 45px;
+      }
 
       @media only screen and (max-width: 768px) {
+        padding: 80px 15px;
         font-size: 14px;
         line-height: 21px;
       }
@@ -79,18 +43,31 @@
         gap: 0.5rem;
         border: none;
         background: #d6ff62;
-        width: 216px;
-        height: 46px;
+        width: 226px;
+        height: 45px;
         font-family: Roboto;
         color: #0d1e2e;
-        font-size: 18px;
+        font-size: 20px;
         text-decoration: none;
         font-weight: 700;
-        line-height: 22px;
-        border-radius: 10px;
+        line-height: 23px;
+        border-radius: 15px;
         cursor: pointer;
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (max-width: 768px) {
           display: none;
+        }
+      }
+      &-title {
+        font-family: Bebas Neue;
+        font-size: 60px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 105px;
+        margin-bottom: 15px;
+        @media only screen and (max-width: 768px) {
+          font-size: 36px;
+          line-height: 64px;
+          margin-bottom: 34px;
         }
       }
     }
@@ -100,11 +77,17 @@
       align-items: center;
 
       img {
-        height: 505px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         @media only screen and (max-width: 768px) {
-          height: 100%;
-          max-width: 90%;
-          object-fit: cover;
+          padding: 0px 15px;
+          width: 80%;
+          margin-bottom: 60px;
+        }
+        @media only screen and (max-width: 425px) {
+          width: 350px;
+          height: 358px;
         }
       }
     }
@@ -125,11 +108,12 @@
       line-height: 22px;
       border-radius: 10px;
       cursor: pointer;
-      @media only screen and (max-width: 1100px) {
-        display: flex;
-      }
+
       @media only screen and (max-width: 768px) {
         display: flex;
+        margin-bottom: 75px;
+      }
+      @media only screen and (max-width: 425px) {
         width: 140px;
         height: 35px;
         font-size: 14px;

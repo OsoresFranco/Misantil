@@ -2,19 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
-  background-image: url("../../../../public/images/hero.jpg");
+  background-image: url("../../../../public/images/login.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  padding: 105px 200px;
+  padding: 150px 200px;
   @media only screen and (max-width: 900px) {
-    padding: 0;
+    padding: 150px 15px;
     justify-content: center;
     align-content: center;
-  }
-  @media only screen and (max-width: 768px) {
-    padding: 0px 15px;
   }
 
   &__form {
@@ -51,6 +47,7 @@
       }
     }
     &-input {
+      margin-bottom: 35px;
       label {
         font-family: Roboto;
         font-size: 1.1rem;
@@ -77,12 +74,19 @@
         background: none;
         transition: border-color 0.3s;
         box-sizing: border-box;
-        margin-bottom: 35px;
+        
         @media only screen and (max-width: 768px) {
           font-size: 14px;
           line-height: 21px;
-          margin-bottom: 35px;
         }
+      }
+      &-error{
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ED2525;
+        
       }
     }
     &-button {
@@ -101,13 +105,13 @@
       font-weight: 700;
       line-height: 28px;
       border-radius: 8px;
+      margin-top: 15px;
       cursor: pointer;
       @media only screen and (max-width: 768px) {
-        font-size: 24px;
-        line-height: 28px;
-        border-radius: 8px;
+        font-size: 14px;
+        line-height: 16px;
         height: 50px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
       }
     }
   }

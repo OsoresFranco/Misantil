@@ -1,17 +1,30 @@
 <div class="login">
   <div class="login__form">
     <div class="login__form-title">Iniciar sesión</div>
-    <form (ngSubmit)="onSubmit()">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="login__form-input">
-        <label for="name">Nombre de usuario</label>
+        <label for="username">Nombre de usuario</label>
         <input
           type="text"
           id="username"
-          name="username"
-          [(ngModel)]="loginData.username"
-          required
-          placeholder=""
+          formControlName="username"
+          placeholder="Introduce tu nombre de usuario"
         />
+        <div
+          *ngIf="
+            loginForm.get('username')?.invalid &&
+            loginForm.get('username')?.touched
+          "
+        >
+          <small
+            class="login__form-input-error"
+            *ngIf="loginForm.get('username')?.errors?.['required']"
+            >El nombre de usuario es requerido</small
+          >
+          <small *ngIf="loginForm.get('username')?.errors?.['minlength']">
+            El nombre de usuario debe tener al menos 4 caracteres
+          </small>
+        </div>
       </div>
 
       <div class="login__form-input">
@@ -19,11 +32,27 @@
         <input
           type="password"
           id="password"
-          name="password"
-          [(ngModel)]="loginData.password"
-          required
-          placeholder=""
+          formControlName="password"
+          placeholder="Introduce tu contraseña"
         />
+        <div
+          *ngIf="
+            loginForm.get('password')?.invalid &&
+            loginForm.get('password')?.touched
+          "
+        >
+          <small
+            class="login__form-input-error"
+            *ngIf="loginForm.get('password')?.errors?.['required']"
+            >La contraseña es requerida</small
+          >
+          <small
+            class="login__form-input-error"
+            *ngIf="loginForm.get('password')?.errors?.['minlength']"
+          >
+            La contraseña debe tener al menos 6 caracteres
+          </small>
+        </div>
       </div>
 
       <button type="submit" class="login__form-button">Ingresar</button>
